@@ -5,6 +5,7 @@ import { useState } from "react";
 import Footer from "./components/Footer";
 import Form from "./components/Form";
 import Subscribed from "./components/Subscribed";
+import ProductList from "./components/ProductList";
 
 function App() {
 	const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
@@ -32,20 +33,7 @@ function App() {
 						<h2 className="pb-6 text-neutral-charcoalGrey">
 							Join 60,000+ product managers receiving monthly updates on:
 						</h2>
-						<ul className="text-neutral-charcoalGrey text-[16px] w-[90%]">
-							<li className="flex items-start gap-4 pb-4">
-								<img src="/images/icon-list.svg" alt="Checked icon" />
-								Product discovery and building what matters
-							</li>
-							<li className="flex items-start gap-4 pb-4">
-								<img src="/images/icon-list.svg" alt="Checked icon" />
-								Measuring to ensure updates are a success
-							</li>
-							<li className="flex items-start gap-4">
-								<img src="/images/icon-list.svg" alt="Checked icon" />
-								And much more!
-							</li>
-						</ul>
+						<ProductList />
 						<Form setIsSubmitted={setIsSubmitted} />
 					</div>
 				</section>
