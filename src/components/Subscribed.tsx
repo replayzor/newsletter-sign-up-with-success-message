@@ -8,7 +8,7 @@ function Subscribed({ setIsSubmitted }: Props) {
 			<div className="">
 				<img
 					src="/images/icon-success.svg"
-					alt=""
+					alt="Success icon"
 					className="pt-40 pl-6 md:pt-8"
 				/>
 			</div>

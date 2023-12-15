@@ -17,10 +17,12 @@ function App() {
 				<section className="w-[375px] md:rounded-3xl md:w-[900px] md:flex-row-reverse md:flex bg-white">
 					<img
 						src="/images/illustration-sign-up-mobile.svg"
+						alt="Mobile Illustration"
 						className="md:hidden"
 					/>
 					<img
 						src="/images/illustration-sign-up-desktop.svg"
+						alt="Desktop Illustration"
 						className="hidden py-5 pr-5 md:block"
 					/>
 					<div className="pt-8 pl-6 md:w-[90%] md:px-10 md:flex md:flex-col md:justify-center">
@@ -32,15 +34,15 @@ function App() {
 						</h2>
 						<ul className="text-neutral-charcoalGrey text-[16px] w-[90%]">
 							<li className="flex items-start gap-4 pb-4">
-								<img src="/images/icon-list.svg" alt="" />
+								<img src="/images/icon-list.svg" alt="Checked icon" />
 								Product discovery and building what matters
 							</li>
 							<li className="flex items-start gap-4 pb-4">
-								<img src="/images/icon-list.svg" alt="" />
+								<img src="/images/icon-list.svg" alt="Checked icon" />
 								Measuring to ensure updates are a success
 							</li>
 							<li className="flex items-start gap-4">
-								<img src="/images/icon-list.svg" alt="" />
+								<img src="/images/icon-list.svg" alt="Checked icon" />
 								And much more!
 							</li>
 						</ul>
