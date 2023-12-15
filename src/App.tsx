@@ -9,11 +9,12 @@ import ProductList from "./components/ProductList";
 
 function App() {
 	const [isSubmitted, setIsSubmitted] = useState<boolean>(false);
+	const [email, setEmail] = useState<string>("");
 
 	return (
 		<main className="flex flex-col items-center justify-center h-screen bg-neutral-charcoalGrey font-roboto">
 			{isSubmitted ? (
-				<Subscribed setIsSubmitted={setIsSubmitted} />
+				<Subscribed setIsSubmitted={setIsSubmitted} email={email} />
 			) : (
 				<section className="w-[375px] md:rounded-3xl md:w-[900px] md:flex-row-reverse md:flex bg-white">
 					<img
@@ -34,7 +35,7 @@ function App() {
 							Join 60,000+ product managers receiving monthly updates on:
 						</h2>
 						<ProductList />
-						<Form setIsSubmitted={setIsSubmitted} />
+						<Form setIsSubmitted={setIsSubmitted} setEmail={setEmail} />
 					</div>
 				</section>
 			)}

@@ -10,9 +10,10 @@ type FormData = {
 
 type FormProps = {
 	setIsSubmitted: Dispatch<SetStateAction<boolean>>;
+	setEmail: Dispatch<SetStateAction<string>>;
 };
 
-function Form({ setIsSubmitted }: FormProps) {
+function Form({ setIsSubmitted, setEmail }: FormProps) {
 	const {
 		register,
 		resetField,
@@ -24,6 +25,7 @@ function Form({ setIsSubmitted }: FormProps) {
 		console.log(data);
 		if (!errors.email) resetField("email");
 		setIsSubmitted(true);
+		setEmail(data.email);
 	};
 
 	return (

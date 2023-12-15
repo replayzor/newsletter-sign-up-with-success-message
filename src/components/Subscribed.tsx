@@ -1,8 +1,9 @@
 type Props = {
 	setIsSubmitted: (value: boolean) => void;
+	email: string;
 };
 
-function Subscribed({ setIsSubmitted }: Props) {
+function Subscribed({ setIsSubmitted, email }: Props) {
 	return (
 		<section className="w-[375px] md:px-9 md:w-[460px] md:rounded-3xl md:flex-col md:flex bg-white">
 			<div className="">
@@ -18,7 +19,7 @@ function Subscribed({ setIsSubmitted }: Props) {
 			<p className="pt-6 pb-64 pl-6 font-medium md:pb-10 text-neutral-darkSlateGrey">
 				A confirmation email has been sent to{" "}
 				<span className="font-semibold text-neutral-darkSlateGrey">
-					ash@loremcompany.com.
+					{email}
 				</span>{" "}
 				Please open it and click the button inside to confirm your subscription.
 			</p>
