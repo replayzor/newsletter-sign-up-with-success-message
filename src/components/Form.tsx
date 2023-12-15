@@ -1,3 +1,7 @@
+// react imports
+import { Dispatch, SetStateAction } from "react";
+
+// library imports
 import { SubmitHandler, useForm } from "react-hook-form";
 
 type FormData = {
@@ -5,7 +9,7 @@ type FormData = {
 };
 
 type FormProps = {
-	setIsSubmitted: React.Dispatch<React.SetStateAction<boolean>>;
+	setIsSubmitted: Dispatch<SetStateAction<boolean>>;
 };
 
 function Form({ setIsSubmitted }: FormProps) {
